@@ -3,7 +3,6 @@ require("dotenv").config();
 
 // Ensure required environment variables are set
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const TESTNET_RPC_URL = process.env.TESTNET_RPC_URL;
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL;
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -24,12 +23,6 @@ module.exports = {
     },
     localhost: {
       url: "http://127.0.0.1:8545",
-    },
-    // Paradise L1 Testnet (Fuji)
-    testnet: {
-      url: TESTNET_RPC_URL || "",
-      chainId: 18133,
-      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
     // Paradise L1 Mainnet
     mainnet: {

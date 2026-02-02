@@ -9,7 +9,6 @@ Smart contracts for Paradise Tycoon's L1 blockchain. This repository contains th
 
 Paradise Chain L1 is an Avalanche Subnet-EVM blockchain running at:
 - **Mainnet**: Chain ID `15135`
-- **Testnet**: Chain ID `18133` (Fuji)
 
 These contracts implement critical game mechanics on-chain, providing transparency, immutability, and verifiable game state.
 
@@ -95,7 +94,6 @@ npm install
 
 ```bash
 PRIVATE_KEY=your_private_key_here
-TESTNET_RPC_URL=https://rpc.paradise.cloud/ext/bc/YOUR_BLOCKCHAIN_ID/rpc
 MAINNET_RPC_URL=https://rpc.paradise.cloud/ext/bc/YOUR_BLOCKCHAIN_ID/rpc
 ```
 
@@ -112,14 +110,6 @@ npm test
 ```
 
 ## Deploy
-
-### Testnet
-
-```bash
-npm run deploy:testnet
-```
-
-### Mainnet
 
 ```bash
 npm run deploy:mainnet
